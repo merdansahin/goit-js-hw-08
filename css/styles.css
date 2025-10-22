@@ -1,0 +1,31 @@
+body {
+  background-color: #fafafa;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.gallery {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-item {
+  border-radius: 1px;
+  overflow: hidden;
+  transition: transform 0s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  cursor: pointer;
+}
